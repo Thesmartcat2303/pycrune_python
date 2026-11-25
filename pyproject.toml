@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycrune-python"
+version = "1.0.0"
+description = "PycRune bytecode decompiler in Python"
+readme = "PYTHON.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Upstream = "https://github.com/hngocuyen/pycrune"
+
+[project.scripts]
+pycrune = "pycrune.cli:main"
+
+[tool.setuptools]
+packages = ["pycrune"]
